@@ -3,6 +3,6 @@
 
 backend [Dockerfile](backend/Dockerfile)
 
-frontend [Dockerfile](frotend/Dockerfile)
+frontend [Dockerfile](frontend/Dockerfile)
 
 nginx conf file [nginx.conf](frontend/nginx.conf)
