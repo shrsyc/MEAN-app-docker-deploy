@@ -32,7 +32,7 @@ pipeline {
                         cd ..
 
                         
-                        cd backend/nursery
+                        cd backend
                         docker push $DOCKER_USER/dd_mean_backend
                         cd ..
 
