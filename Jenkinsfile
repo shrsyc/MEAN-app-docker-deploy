@@ -23,14 +23,10 @@ pipeline {
         }
         stage('Run Docker Compose') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'db-creds', usernameVariable: 'DB_USER', passwordVariable: 'DB_PASS')]) {
                     sh '''
-                        export DB_USER=$DB_USER
-                        export DB_PASS=$DB_PASS
-                        docker-compose down || true
+                        docker-compose down -v || true
                         docker-compose up -d
                     '''
-                }
             }
         }
 
