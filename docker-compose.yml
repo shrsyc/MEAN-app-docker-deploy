@@ -10,7 +10,7 @@ services:
       - mongo-data:/data/db
 
   backend:
-    image: backend
+    image: shrsyc/dd_mean_backend
     ports:
       - "8080:8080"
     depends_on:
@@ -19,7 +19,7 @@ services:
       - MONGO_URL=mongodb://mongo:27017/dd_db
 
   frontend:
-    image: frontend
+    image: shrsyc/dd_mean_frontend
     ports:
       - "80:80"
     depends_on:
