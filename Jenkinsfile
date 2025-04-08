@@ -44,7 +44,7 @@ pipeline {
         stage('Run Docker Compose') {
             steps {
                     sh '''
-                        docker-compose down -v || true
+                        docker-compose down || true
                         docker-compose up -d
                     '''
             }
