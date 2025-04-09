@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-This is a containerized full-stack MEAN application with Jenkins CI/CD.  
+A containerized full-stack MEAN (MongoDB, Express, Angular, Node.js) application integrated with a Jenkins CI/CD pipeline. It automates the process of building, testing, and deploying using Docker, Docker Compose, and GitHub Webhooks, with Docker Hub for image storage and Nginx for frontend delivery and reverse proxying.  
 
 ### Key Files
 
