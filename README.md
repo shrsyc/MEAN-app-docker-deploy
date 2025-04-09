@@ -15,3 +15,20 @@ nginx conf file [nginx.conf](frontend/nginx.conf)
 - acess jenkins dashboard at port 8080
     - add dockerhub username & tocken to with id as dockerhub in jenkins credential 
     - install pipeline stage view plugin for clean pipline view
+ 
+<pre lang="markdown"> 
+📁 MEAN-app-docker-deploy 
+├── 📁 backend 
+│   ├── 📁 app 
+│   ├── 📄 server.js 
+│   └── 📄 Dockerfile
+│   
+├── 📁 frontend 
+│   ├── 📁 src 
+|   ├── 📄 nginx.conf
+│   └── 📄 Dockerfile 
+│   
+├── 📄 Jenkinsfile
+├── 📄 docker-compose.yml
+└── 📄 README.md
+</pre>
