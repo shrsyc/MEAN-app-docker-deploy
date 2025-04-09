@@ -62,12 +62,19 @@ systemctl enable jenkins</pre>
 - credentials
 - pipeline ,webhook,jenkins file images
 
-## Github Webhook
-- In Repository settings add webhook payload url and content type.
-![webhhook1](https://github.com/user-attachments/assets/c1125e84-4d5d-474a-abd4-dd17e596be0f)
 <br/>
-- if you find a green tick then the webhook is active and any new commits in the repo it will trigger jenkins pipeline.
-![webhook2](https://github.com/user-attachments/assets/96cb3c41-c6c4-4cd3-b91f-916d6dcaae51)
+
+## GitHub Webhook Setup
+
+- In your **repository settings**, go to **Webhooks** and add the **Payload URL** and set the content type to **application/json**.
+
+![Webhook Step 1](https://github.com/user-attachments/assets/c1125e84-4d5d-474a-abd4-dd17e596be0f)
+<br/>
+![Webhook Step 2](https://github.com/user-attachments/assets/d99e5ac1-430e-4e3e-8c98-3921ed273e98)
+
+
+- ✅ If you see a **green check mark**, the webhook is active.
+- Any new commits pushed to the repo will automatically trigger the **Jenkins pipeline**.
 
 
 
