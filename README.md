@@ -11,7 +11,7 @@ This is a containerized full-stack MEAN application with Jenkins CI/CD.
 - [frontend/Dockerfile](frontend/Dockerfile) – Docker setup for the Nginx-Angular frontend
 - [frontend/nginx.conf](frontend/nginx.conf) – Custom Nginx config for frontend deployment
 - [Jenkinsfile](./Jenkinsfile) - Contains jenkins pipeline script
-- [docker-compose](./docker-compose) - docker-compose file to run frontend, backend, database containers together as a same service
+- [docker-compose.yml](./docker-compose.yml) - docker-compose file to run frontend, backend, database containers together as a same service
   
   
 ### Project Structure
