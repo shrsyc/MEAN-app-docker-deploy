@@ -105,9 +105,12 @@ To visualize and manage your CI/CD pipeline effectively, install the following r
 
 - In your **repository settings**, go to **Webhooks** and add the **Payload URL** and set the content type to **application/json**.
 
-![Webhook Step 1](https://github.com/user-attachments/assets/c1125e84-4d5d-474a-abd4-dd17e596be0f)
+![image](https://github.com/user-attachments/assets/b1f71b4e-7e3f-4910-9eb6-256e15177b67)
+
 <br/>
-![Webhook Step 2](https://github.com/user-attachments/assets/d99e5ac1-430e-4e3e-8c98-3921ed273e98)
+
+![image](https://github.com/user-attachments/assets/0b3de5ed-5e78-4aba-a5c7-5ed9ddc35dc1)
+
 
 
 - ✅ If you see a **green check mark**, the webhook is active.
