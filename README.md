@@ -63,7 +63,13 @@ systemctl enable jenkins</pre>
 - pipeline ,webhook,jenkins file images
 
 ## Github Webhook
-- add webhook
+- In Repository settings add webhook payload url and content type.
+![webhhook1](https://github.com/user-attachments/assets/c1125e84-4d5d-474a-abd4-dd17e596be0f)
+<br/>
+- if you find a green tick then the webhook is active and any new commits in the repo it will trigger jenkins pipeline.
+![webhook2](https://github.com/user-attachments/assets/96cb3c41-c6c4-4cd3-b91f-916d6dcaae51)
+
+
 
 ## Nginx
 - whhy used
