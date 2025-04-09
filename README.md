@@ -63,7 +63,7 @@ To visualize and manage your CI/CD pipeline effectively, install the following r
 
 ### Jenkins Credentials
 
-- Added **DockerHub credentials** (`Username with Password`) to Jenkins under `Manage Jenkins → Credentials → Global` for secure authentication.
+- Add **DockerHub credentials** (`Username with token`) to Jenkins under `Manage Jenkins → Credentials → Global` for secure authentication.
 - These credentials are used in the Jenkins pipeline to **push Docker images** to DockerHub without exposing sensitive data in the script.
 
 <br/>
@@ -72,7 +72,7 @@ To visualize and manage your CI/CD pipeline effectively, install the following r
 
 <br/>
 
-- dockerhub token with read write access
+- Dockerhub token with read write access
 
 <br/>
 
