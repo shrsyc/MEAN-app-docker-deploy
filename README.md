@@ -32,3 +32,24 @@ nginx conf file [nginx.conf](frontend/nginx.conf)
 ├── 📄 docker-compose.yml
 └── 📄 README.md
 </pre>
+
+## System Configurations
+> [!NOTE]
+> AWS ec2 Ubuntu VM , 2vCPU 8GiB of memory and 20GiB of storage
+### install git, java, docker, docker-compose and jenkins
+All these installations and conifigurations are done using user data script which will be the first script to be run as root user after creating the VM.  
+<pre>#!/bin/bash
+apt update -y
+apt upgrade -y
+apt install git openjdk-17-jre-headless docker.io docker-compose -y
+wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+apt-get update
+apt-get install jenkins -y
+usermod -aG docker jenkins
+systemctl restart jenkins
+systemctl enable jenkins</pre>
+
