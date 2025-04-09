@@ -55,8 +55,31 @@ systemctl enable jenkins</pre>
 
 
 ## Jenkins Configurations
-- plugins
-- credentials
+To visualize and manage your CI/CD pipeline effectively, install the following recommended Jenkins plugins:
+
+- **Pipeline: Stage View** – Visualize stages in your pipeline.
+
+>  You can install these from **Jenkins Dashboard → Manage Jenkins → Plugins**.
+
+### Jenkins Credentials
+
+- Added **DockerHub credentials** (`Username with Password`) to Jenkins under `Manage Jenkins → Credentials → Global` for secure authentication.
+- These credentials are used in the Jenkins pipeline to **push Docker images** to DockerHub without exposing sensitive data in the script.
+
+<br/>
+
+![jenkins_cred](https://github.com/user-attachments/assets/8b139e6a-8762-478c-91dc-3bb20744242e)
+
+<br/>
+
+- dockerhub token with read write access
+
+<br/>
+
+![docker_cred](https://github.com/user-attachments/assets/7c5b0b63-a6c9-48e4-8e94-56ece7502fad)
+
+
+  
 - pipeline ,webhook,jenkins file images
 
 
