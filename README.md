@@ -36,8 +36,8 @@ A containerized full-stack MEAN (MongoDB, Express, Angular, Node.js) application
 ## System Configurations
 > [!NOTE]
 > AWS ec2 Ubuntu VM , 2vCPU 8GiB of memory and 20GiB of storage
-### install git, java, docker, docker-compose and jenkins
-All these installations and conifigurations are done using user data script which will be the first script to be run as root user after creating the VM.  
+### Install git, java, docker, docker-compose and jenkins
+All these installations and configurations are done using user data script which will be the first script to be run as root user after creating the VM.  
 <pre>#!/bin/bash
 apt update -y
 apt upgrade -y
