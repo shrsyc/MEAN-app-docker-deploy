@@ -144,9 +144,19 @@ location /api/ {
 </pre>
   
 ## CI/CD pipeline
-- checkoutscm with github webhooks
+
+![dd_assignment_1](https://github.com/user-attachments/assets/0a8afeb6-6ccc-4970-a8a3-0453eb5119e4)
+
+
+- As soon as a commit is pushed to the main branch, the configured GitHub webhook triggers the Jenkins pipeline automatically.
+
+### docker images
 - build images , list of images pic
+
+### docker hub
 - dockerhub images push and pics
+
+### docker-compose
 - docker compose , list of containers image
 
 
