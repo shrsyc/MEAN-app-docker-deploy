@@ -15,7 +15,10 @@ nginx conf file [nginx.conf](frontend/nginx.conf)
 - acess jenkins dashboard at port 8080
     - add dockerhub username & tocken to with id as dockerhub in jenkins credential 
     - install pipeline stage view plugin for clean pipline view
- 
+
+
+## Project Overview
+
 <pre lang="markdown"> 
 📁 MEAN-app-docker-deploy 
 ├── 📁 backend 
@@ -52,4 +55,27 @@ apt-get install jenkins -y
 usermod -aG docker jenkins
 systemctl restart jenkins
 systemctl enable jenkins</pre>
+
+
+## Jenkins Configurations
+- plugins
+- credentials
+- pipeline ,webhook,jenkins file images
+
+## Github Webhook
+- add webhook
+
+## Nginx
+- whhy used
+- what did it solve and features used
+- explaining image
+  
+## CI/CD pipeline
+- checkoutscm with github webhooks
+- build images , list of images pic
+- dockerhub images push and pics
+- docker compose , list of containers image
+
+
+
 
