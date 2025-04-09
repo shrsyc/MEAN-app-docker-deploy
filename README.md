@@ -79,8 +79,23 @@ To visualize and manage your CI/CD pipeline effectively, install the following r
 ![docker_cred](https://github.com/user-attachments/assets/7c5b0b63-a6c9-48e4-8e94-56ece7502fad)
 
 
-  
-- pipeline ,webhook,jenkins file images
+### Jenkins Pipeline
+
+- Go to Jenkins Dashboard → New Item, choose Pipeline, and give it a meaningful name and description in the General section.
+
+![image](https://github.com/user-attachments/assets/e85f5e32-7392-4102-998e-9bf71db79b6d)
+
+<br/>
+
+- In the Build Triggers section, select "GitHub hook trigger for GITScm polling" to automatically run the pipeline when a new commit is pushed.
+
+![image](https://github.com/user-attachments/assets/bcf85ec5-1526-449a-b871-97e6d254c158)
+
+<br/>
+
+- In the Pipeline section, choose "Pipeline script from SCM", set SCM to Git, paste your GitHub repository URL, select the desired branch, and provide the path to your Jenkinsfile and then apply and save.
+
+
 
 
 
