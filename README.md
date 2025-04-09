@@ -95,6 +95,8 @@ To visualize and manage your CI/CD pipeline effectively, install the following r
 
 - In the Pipeline section, choose "Pipeline script from SCM", set SCM to Git, paste your GitHub repository URL, select the desired branch, and provide the path to your Jenkinsfile and then apply and save.
 
+![image](https://github.com/user-attachments/assets/47b5b52b-0d49-46b3-8958-734cc7c8000e)
+
 
 
 
