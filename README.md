@@ -149,16 +149,31 @@ location /api/ {
 
 
 - As soon as a commit is pushed to the main branch, the configured GitHub webhook triggers the Jenkins pipeline automatically.
+- Or you can manually trigger the build from the Jenkins dashboard without any code changes.
 
 ### docker images
-- build images , list of images pic
+- Jenkins pipeline automatically builds Docker images during each run.
+
+![image](https://github.com/user-attachments/assets/18793060-8cb9-4dad-87a8-901896c43d58)
+
+
+
 
 ### docker hub
-- dockerhub images push and pics
+- Built and pushed frontend and backend Docker images to Docker Hub for remote storage and deployment.
+  
+![image](https://github.com/user-attachments/assets/4067862d-7935-4509-ae3f-1891ed79b2c9)
+
 
 ### docker-compose
-- docker compose , list of containers image
+- Docker Compose pulls images from remote repositories and runs three containers: frontend, backend, and MongoDB, as part of a single service.
 
+![image](https://github.com/user-attachments/assets/911d04d6-3bef-449d-bcb4-25dfcc9cd069)
 
+![image](https://github.com/user-attachments/assets/fc5fe36d-e4a7-4d4e-a01b-2ec29c07e6f7)
 
+### docker volume
+- Docker volume is used to persist MongoDB data, ensuring it remains intact across container rebuilds and restarts.
+
+![image](https://github.com/user-attachments/assets/cb0cadd2-f72d-4214-af2e-01a7228f700e)
 
