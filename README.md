@@ -116,9 +116,32 @@ To visualize and manage your CI/CD pipeline effectively, install the following r
 
 
 ## Nginx
-- whhy used
-- what did it solve and features used
-- explaining image
+
+- [frontend/nginx.conf](frontend/nginx.conf) – Custom Nginx config for frontend deployment
+- Serves the Angular app on port 80 and uses Nginx reverse proxy to route /api/ requests to the backend, avoiding CORS issues by keeping all traffic under the same domain.
+
+### Serves at Port 80
+
+- Nginx listens on port 80, making the Angular frontend accessible via http://<server-ip> without needing to specify a port.
+
+<pre lang="markdown">
+server {
+    listen 80;
+    ...
+}
+</pre>
+
+
+### API Reverse Proxy
+
+- Forwards all /api/ requests from frontend to the backend container running on `http://backend:8081`.
+
+<pre lang="markdown">
+location /api/ {
+    proxy_pass http://backend:8081/api/;
+    ...
+}
+</pre>
   
 ## CI/CD pipeline
 - checkoutscm with github webhooks
