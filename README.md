@@ -7,3 +7,11 @@ backend [Dockerfile](backend/Dockerfile)
 frontend [Dockerfile](frontend/Dockerfile)
 
 nginx conf file [nginx.conf](frontend/nginx.conf)
+
+- projecct structure
+- aws ec2 configs
+- installations done through userdata
+    - runs script as root user
+- acess jenkins dashboard at port 8080
+    - add dockerhub username & tocken to with id as dockerhub in jenkins credential 
+    - install pipeline stage view plugin for clean pipline view
