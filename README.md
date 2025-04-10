@@ -105,11 +105,13 @@ To visualize and manage your CI/CD pipeline effectively, install the following r
 
 - In your **repository settings**, go to **Webhooks** and add the **Payload URL** and set the content type to **application/json**.
 
-![image](https://github.com/user-attachments/assets/b1f71b4e-7e3f-4910-9eb6-256e15177b67)
+![image](https://github.com/user-attachments/assets/c4a0af2a-6cdd-4e92-b500-8a18904317da)
+
 
 <br/>
 
-![image](https://github.com/user-attachments/assets/0b3de5ed-5e78-4aba-a5c7-5ed9ddc35dc1)
+![image](https://github.com/user-attachments/assets/af803d98-9560-4874-ada2-32c1bf30e016)
+
 
 
 
@@ -179,4 +181,17 @@ location /api/ {
 - Docker volume is used to persist MongoDB data, ensuring it remains intact across container rebuilds and restarts.
 
 ![image](https://github.com/user-attachments/assets/cb0cadd2-f72d-4214-af2e-01a7228f700e)
+
+
+
+## Working Application UI
+
+![image](https://github.com/user-attachments/assets/0530899f-581d-4602-8883-ee7af6ec7af4)
+
+![image](https://github.com/user-attachments/assets/c6366cf8-7163-44e4-8066-26c23f52c92d)
+
+![image](https://github.com/user-attachments/assets/86972ba0-830e-4090-aa14-a4202e899fc2)
+
+![image](https://github.com/user-attachments/assets/42e17367-d0aa-4efb-bafb-7be1e02e297c)
+
 
